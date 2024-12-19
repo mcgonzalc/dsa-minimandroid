@@ -10,7 +10,7 @@ import java.util.List;
 public interface GameManager {
 
     public FAQ addFAQ(FAQ question);
-    public FAQ createFAQ(String question, String answer);
+    public FAQ createFAQ(String date, String question, String answer, String sender);
     public List<FAQ> getFAQS();
     public int sizeQuestionsFAQs();
 

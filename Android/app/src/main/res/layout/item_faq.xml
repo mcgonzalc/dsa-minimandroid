@@ -13,6 +13,15 @@
         android:layout_marginStart="16dp">
 
         <TextView
+            android:id="@+id/faqDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ Date"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
             android:id="@+id/faqQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,6 +34,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FAQ Answer"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/faqSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ Sender"
             android:textSize="18sp"
             android:textStyle="bold" />
 

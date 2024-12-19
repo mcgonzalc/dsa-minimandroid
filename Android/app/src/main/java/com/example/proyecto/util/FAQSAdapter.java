@@ -45,8 +45,10 @@ public class FAQSAdapter extends RecyclerView.Adapter<FAQSAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FAQ question = questions.get(position);
+        holder.FAQdate.setText(question.getDate());
         holder.FAQquestion.setText(question.getQuestion());
         holder.FAQanswer.setText(question.getAnswer());
+        holder.FAQsender.setText(question.getSender());
     }
 
     @Override
@@ -55,13 +57,17 @@ public class FAQSAdapter extends RecyclerView.Adapter<FAQSAdapter.ViewHolder> {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView FAQdate;
         TextView FAQquestion;
         TextView FAQanswer;
+        TextView FAQsender;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            FAQdate = itemView.findViewById(R.id.faqDate);
             FAQquestion = itemView.findViewById(R.id.faqQuestion);
             FAQanswer = itemView.findViewById(R.id.faqAnswer);
+            FAQsender = itemView.findViewById(R.id.faqSender);
         }
     }
 }

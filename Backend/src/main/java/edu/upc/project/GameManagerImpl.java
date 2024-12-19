@@ -27,7 +27,7 @@ public class GameManagerImpl implements GameManager {
         return instance;
     }
 
-    //Function that adds the generated FAQ from the function addQuestion to the list of questions
+    //Function that adds the generated FAQ from the function createFAQ to the list of questions
     public FAQ addFAQ(FAQ question) {
         logger.info("Petition for a new FAQ: " + question);
         this.questions.add(question);
@@ -37,8 +37,8 @@ public class GameManagerImpl implements GameManager {
 
     //Functions that takes all the values necessaries to construct a new question and
     //passes them as a question object to be initialized
-    public FAQ createFAQ(String question, String answer){
-        return this.addFAQ(new FAQ(question, answer));
+    public FAQ createFAQ(String date, String question, String answer, String sender){
+        return this.addFAQ(new FAQ(date, question, answer, sender));
     }
     //Function that returns all the FAQs
     public List<FAQ> getFAQS()

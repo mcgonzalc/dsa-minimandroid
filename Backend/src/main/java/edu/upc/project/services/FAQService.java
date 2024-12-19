@@ -26,10 +26,10 @@ public class FAQService {
     public FAQService() {
         this.gm = GameManagerImpl.getInstance();
         if (gm.sizeQuestionsFAQs() == 0) {
-            this.gm.createFAQ("Esta es la pregunta", "Esto es la respuesta");
-            this.gm.createFAQ("Esta es la pregunta 2", "Esto es la respuesta 2");
-            this.gm.createFAQ("Si quieres añadir más preguntas, ve a FAQService en IntelliJ" +
-                    " y ve a la función FAQService", "A que es fácil añadir más preguntas?");
+            this.gm.createFAQ("10/10/1964", "Esta es la pregunta", "Esto es la respuesta", "Jonathan");
+            this.gm.createFAQ("30/01/2015","Esta es la pregunta 2", "Esto es la respuesta 2", "Maria");
+            this.gm.createFAQ("19/10/2015","Si quieres añadir más preguntas, ve a FAQService en IntelliJ" +
+                    " y ve a la función FAQService", "A que es fácil añadir más preguntas?", "Albiol");
         }
     }
 
